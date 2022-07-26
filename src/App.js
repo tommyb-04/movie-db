@@ -9,11 +9,11 @@ import RemoveFavourites from './components/RemoveFavourites';
 
 const App = () => {
   const [movies, setMovies] = useState([]);
-  const [favourites, setFavourites] = useState([]);
   const [searchValue, setSearchValue] = useState('');
+  const [favourites, setFavourites] = useState([]);
 
 const getMovieRequest = async (searchValue) => {
-  const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=52b2272e`
+  const url = `https://www.omdbapi.com/?s=${searchValue}&apikey=52b2272e`
 
   const response = await fetch(url);
   const responseJson = await response.json();
