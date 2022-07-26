@@ -8,8 +8,9 @@ body {
     overflow-x: auto;
     flex-wrap: nowrap;
     .m-3 {
-      width: 25vw;
+      width: 12.5vw;
       padding: 0;
+      margin: 0 8px !important;
       img {
         width: 100%;
       }
